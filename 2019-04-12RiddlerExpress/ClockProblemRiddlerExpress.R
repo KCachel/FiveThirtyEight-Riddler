@@ -93,19 +93,19 @@ ggplot(plot_clock, aes(hourHand, minuteHand, color = type)) +
   scale_x_continuous(breaks = seq(0,360, by=30))+
   scale_y_continuous(breaks = seq(0,360, by=30))+
   scale_color_manual(values = pal)+
-  labs(title = "Graphical representation: 12 hours of a clock \n with the same length minute and hour hands",
-      subtitle = "12*12 = 144 intersections, but notice the top right doesn't intersect and all points\non the green line (11 intersections) you can tell the time. So its 144-1-11 = 132\nintersections where you can't tell the time.") +
+  labs(title = "Graphical representation: 12 hours of a clock \n with the same length minute and hour hands"
+      ) +
   theme(legend.position = "bottom",
         axis.text.x=element_text(face = "bold"),
         axis.text.y = element_text( face = "bold"),
         legend.text= element_text( size = 10, face = "bold"),
         plot.title = element_text( face = "bold"),
-        )+
+        plot.subtitle = element_text(face = "bold"))+
   theme(axis.title = element_text()) +
   ylab("Minute hand degrees") +
   xlab("Hour hand degrees")
 
-ggsave("RiddlerExpress_4_12.png", width = 10.5, height = 8)
+ggsave("RiddlerExpress_4_12DarkMode.png", width = 10.5, height = 8)
 
 
   
