@@ -9,6 +9,7 @@ This week's Riddler Express is a nifty clock problem.
 See <https://fivethirtyeight.com/features/how-many-times-a-day-is-a-broken-clock-right/> for the details.  
 
 # My solution: 
+For code:https://github.com/KCachel/FiveThirtyEight-Riddler/tree/master/2019-04-12RiddlerExpress
 
 I chose to solve this problem graphically. I created lines for a "normal clock" (minute hand is longer than hour hand) and what I call a "flipped clock". The flipped clock I like to imagine you literally taking the hands off the clock and cutting the minute hand to be the short one. Thus, the minute hand is the hour hand and vice versa. Confusing! But hang on.
 
